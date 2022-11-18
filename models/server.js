@@ -10,9 +10,7 @@ class Server{
 
     this.port = process.env.PORT
 
-    this.usariosPath = '/api/usuarios'
-
-    this.mascotaPath = '/api/mascotas'
+    this.mascotaPath = '/api/encuesta'
 
     this.middlewares()
 
@@ -35,8 +33,7 @@ class Server{
   }
 
   routes(){//Rutas de la aplicación
-    this.app.use( this.usariosPath, require('../routes/usuarios'));
-    this.app.use( this.mascotaPath, require('../routes/mascota'));
+    this.app.use( this.mascotaPath, require('../routes/encuesta'));
   }
 
   listen(){

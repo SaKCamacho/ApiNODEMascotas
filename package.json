@@ -10,7 +10,7 @@
   "keywords": [
     "express"
   ],
-  "author": "Diego Lopez",
+  "author": "Flexxin",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
